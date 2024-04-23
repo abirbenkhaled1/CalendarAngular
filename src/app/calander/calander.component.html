@@ -1,0 +1,17 @@
+<div class="container" style="margin-top: 60px">
+  <header>
+    <h1>Calendar App</h1>
+    <button class="btn" routerLink="/cards">View Cards</button>
+  </header>
+  <div class="center">
+<ejs-schedule
+  *ngIf="isDataAvailable"
+  width='100%'
+  height='450px'
+  [currentView]="currentView"
+  [(selectedDate)]="selectedDate"
+  [eventSettings]="eventSettings"
+>
+</ejs-schedule>
+</div>
+</div>

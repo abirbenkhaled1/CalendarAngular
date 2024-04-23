@@ -1,0 +1,60 @@
+.reservation-calendar {
+  /* Styles for the overall calendar container */
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navigation button {
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-gap: 5px;
+}
+
+.calendar-row {
+  display: flex;
+}
+
+.calendar-day {
+  text-align: center;
+  padding: 5px;
+  border: 1px solid #ddd;
+  cursor: pointer;
+  position: relative;
+}
+
+.calendar-day.today {
+  background-color: #eee;
+}
+
+.reservation-indicator {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 5px;
+  height: 5px;
+  background-color: red;
+  border-radius: 50%;
+}
+
+.selected-reservation {
+  /* Styles for the selected reservation details section (optional) */
+}
+
+/* Styles for week and day views (replace with your desired styles) */
+.calendar-week-view,
+.calendar-day-view {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}

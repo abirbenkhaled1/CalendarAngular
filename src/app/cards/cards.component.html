@@ -1,0 +1,10 @@
+<div class="container" style="margin-top: 60px">
+<div class="card" *ngFor="let sale of Salles">
+    <img src="https://www.appliedglobal.com/wp-content/uploads/How-to-Create-a-Modern-Meeting-Room-Setup.png" >
+    <p> location: {{ sale.location }}</p>
+   <p>  capacity:{{ sale.capacity }}</p>
+     <p>amenities:{{ sale.amenities }}</p>
+     <p>amenities:{{ sale._id }}</p>
+    <button class="btn" [routerLink]="['/calander', sale._id]" >Show</button>
+  </div>
+</div>
